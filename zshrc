@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(rails ruby brew rbenv)
+plugins=(rails ruby brew rbenv gitfast)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -57,7 +57,7 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
 export PATH="$PATH:/usr/local/lib/node_modules"
-source $(brew --prefix nvm)/nvm.sh
+source `brew --prefix`/opt/nvm/nvm.sh
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 
@@ -104,7 +104,7 @@ source ~/.aliases
 eval "$(rbenv init - zsh --no-rehash)"
 
 # Export boot2docker environment variables
-eval `boot2docker shellinit 2>/dev/null`
+eval `docker-machine env 2>/dev/null`
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
