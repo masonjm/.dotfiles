@@ -4,14 +4,11 @@
 # bash <(curl -s https://raw.githubusercontent.com/thoughtbot/laptop/master/mac) 2>&1 | tee ~/laptop.log
 
 brew tap caskroom/cask
-brew install brew-cask
 
 brew cask install google-chrome
 brew cask install dropbox
 
 brew install rbenv-vars
-
-brew install TomAnthony/brews/itermocil
 
 mkdir -p ~/Projects
 cd ~/Projects
