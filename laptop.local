@@ -10,6 +10,8 @@ brew cask install dropbox
 
 brew install rbenv-vars
 
+brew install nvm
+
 mkdir -p ~/Projects
 cd ~/Projects
 [[ ! -d zsh-git-prompt ]] && git clone https://github.com/olivierverdier/zsh-git-prompt.git
