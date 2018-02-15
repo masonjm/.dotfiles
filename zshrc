@@ -103,15 +103,9 @@ source ~/.aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(rbenv init - zsh --no-rehash)"
 
-# Export boot2docker environment variables
-eval `docker-machine env 2>/dev/null`
-
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
-# itermocil command completion
-compctl -g '~/.teamocil/*(:t:r)' itermocil
-
 # Android Studio setup for React Native projects
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+# export ANDROID_HOME=$HOME/Library/Android/sdk
+# export PATH=$PATH:$ANDROID_HOME/tools
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
