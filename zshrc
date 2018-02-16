@@ -59,7 +59,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH:/usr/local/lib/node_modules"
 source `brew --prefix`/opt/nvm/nvm.sh
 
-export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh --no-rehash)"
 
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
@@ -101,7 +101,6 @@ source ~/.aliases
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-eval "$(rbenv init - zsh --no-rehash)"
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
